@@ -1,0 +1,334 @@
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>ife01_02</title>
+    <style type="text/css">
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: "微软雅黑";
+        background-color: #dedede;
+    }
+
+    .head{
+        position: relative;
+        background-color: #333;
+        height: 60px; 
+    }
+ 
+    .head img{
+       height: 58px;
+       padding-left: 30px;
+    }
+
+    .head ul{
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+   
+    .head ul li{
+       float: left;
+       display: block;
+       width: 60px;
+       text-align: center;
+       padding: 20px 10px;
+    }
+
+    .head ul li a{
+       text-decoration: none;
+       color: white;
+       font-size: 12px;
+    }
+
+    .head ul li:hover{
+       border-bottom: 1px solid red;
+       background: #474747;
+       border-radius: 3px;
+    }
+
+    .article1 , .article2 , .article3 ,.picture , .aside{
+         background-color: white;
+         box-shadow: 1px 1px 2px 1px #848484;
+         margin: 30px;
+         padding: 20px;
+         display: block;
+    }
+
+    .pic {
+         width: 300px;
+         height: 210px;
+         margin-bottom: 20px;
+         border: 1px solid black;
+    }
+
+    .picture pre{ 
+        margin-left: 120px;
+    }
+
+    .article3{
+        position: relative;
+    }
+
+    .article3 ol{
+        position: absolute;
+        left: 50px;
+    }
+
+    .article3 table{
+        width: 100%;
+        border-collapse: collapse;
+        vertical-align: right;
+        border:1px solid #ccc;
+    }
+
+    .article3 table thead{
+        background-color: #333;
+        color: white;
+       /* text-align: center;*/
+    }
+
+    .article3 table tfoot{
+        background-color: #ccc;
+    }
+
+    .aside h2{
+        border-left: 3px solid #ccc;
+        padding-left: 25px;
+        height:40px;
+        line-height: 40px;
+    }
+
+    .aside form div {
+        font-size: 14px;
+        padding-right: 15px;
+        margin:15px 25%;
+    }
+
+
+    .aside form div p{
+        margin-left: 115px;
+        padding-left: 1px;
+        font-size: 12px;
+        color: #aaa;
+    }
+
+    .aside form textarea{
+        width: 60%;
+        height: 100px;
+    }
+
+    .aside form button{
+        width: 100%;
+        height: 30px;
+        background-color: #128fdc;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+
+    }
+
+    .footer{
+        width: 100%;
+        height: 30px;
+        color: white;
+        background-color: black;
+        font-size: 16px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div class = "head">
+      <a href=""><img src="u=3631886752,3314948333&fm=21&gp=0.jpg"></a>
+         <ul>
+            <li><a href="">链接一</a></li>
+            <li><a href="">链接二</a></li>
+            <li><a href="">链接三</a></li>
+            <li><a href="">链接四</a></li>
+         </ul>
+  </div>
+
+  <div class = "article1">
+     <h2>文章一级标题</h2>
+     <h2>文章二级标题</h2>
+     <p> 文章作者 文章发表时间<br><br>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+        <br>
+        换行了
+        <br>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br>
+        这是一个很长很长的段落，这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+     </p>
+     <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+     <p>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，换行了<br>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落  <a href="http://ife.baidu.com" target ="_blank">这里有一个链接打开后到新窗口链接</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+     </p>
+  </div>
+
+  <div class = "article2">
+     <h2>另一篇文章一级标题</h2>
+     <h2>文章二级标题</h2>
+     <p>
+        文章作者 文章发表时间 <br>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+        这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+     </p>
+     <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+     <ul>
+        <li>列表项目一</li>
+        <li>列表项目二</li>
+        <li>列表项目三</li>
+     </ul>
+  </div>
+
+  <div class = "picture">
+     <h2>图片</h2>
+        <div class = "pic">
+        <pre>好看的图片</pre>
+        <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+        </div>
+        <div class = "pic">
+        <pre>好看的图片</pre>
+        <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+        </div>
+        <div class = "pic">
+        <pre>好看的图片</pre>
+        <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+        </div>
+        <div class = "pic">
+        <pre>好看的图片</pre>
+        <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+        </div>
+        <div class = "pic">
+        <pre>好看的图片</pre>
+        <img src="u=1895508107,568240214&fm=21&gp=0.jpg">
+        </div>
+       
+  </div>
+
+  <div class = "article3">
+     
+     <h2>最后一篇文章一级标题</h2>
+     <br />
+     <h3>文章二级标题</h3>
+     <br /> 
+     <p>文章作者 文章发表时间</p>
+     <br />
+
+     <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+     </ol>
+
+     <br />
+     <br />
+     <br />
+     <br />
+     <p>下面是一个表格，加了border = "1" 好让你看出来这是一个表格</p>
+     <table border = "1">
+         <thead>
+            <tr>
+                <td>表头</td>
+                <td>表头</td>
+                <td>表头</td>
+            </tr>
+         </thead>
+         <tbody>
+             <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="">操作</a></td>
+             </tr>
+             <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="">操作</a></td>
+             </tr>
+             <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="">操作</a></td>
+             </tr>
+         </tbody>
+         <tfoot>
+              <tr>
+                 <td>总计</td>
+                 <td colspan = "2">1000</td>
+              </tr>
+         </tfoot>
+     </table>
+  </div>
+
+  <div class = "aside">
+     <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+     <br />
+     <form>
+         <div>
+            <label>请输入邮箱地址:</label>
+            <input value = "这是一个文本框">
+            <p>邮箱地址按要求格式输入</p>
+         </div>
+
+         <div>
+            <lable>请输入您的密码：  </label>
+            <input value = "这是一个文本框" />
+         </div>
+
+         <div>
+            <label>请重复输入密码: </label>
+            <input value = "这是一个文本输入框">
+            <p>密码为6-16位数字</p>
+         </div>
+
+         <div>
+             <label class="tips">性别</label>
+                    <!--value提交数据到服务器的值；checked默认被选中-->
+
+                    <input type="radio" value="male" name="sex" checked="checked" />
+                    <label>男</label>
+                    <input type="radio" value="female" name="sex" />
+                    <label>女</label>
+         </div>
+         
+         <div>
+              <label>城市：</label>
+              <select name="city">
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="重庆" selected="selected">重庆</option>
+                    <option value="天津">天津</option>
+              </select>
+         </div>
+
+         <div>
+              <label>爱好：</label>
+              <input type = "checkbox" name = "hobby"> 
+              <label>运动</label> 
+              <input type = "checkbox" name = "hobby"> 
+              <label>艺术</label>  
+              <input type = "checkbox" name = "hobby">  <label>科学</label>
+         </div>
+
+         <div>
+              <label>个人描述：</label>
+              <textarea value = "这是一个多行输入框"></textarea>
+         </div>
+              <button> 确认提交</button><br>
+         
+     </form>
+   </div>
+   <div class = "footer">
+        版权所有@李一民
+   </div>
+</body>
+</html>
